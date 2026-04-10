@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-4.0.0.slim.js" integrity="sha256-M+GjhMBfXikM1izMplICCTscIj5hzPCp6uDzaypxtgg=" crossorigin="anonymous"></script>
+    <title>Jquery</title>
+</head>
+<body>
+
+    <h1>jqueryの練習</h1>
+    <p id="message">こんにちは。</p>
+    <button id="changeTxt">文字を変える</button>
+
+    <script>
+       /*
+
+       VanillaJs
+       
+       document.getElementById("changeTxt").addEventListener("click", function(){
+            document.getElementById("message").textContent = "こんばんは"
+        })*/
+
+
+        //jquery
+
+        $("#changeTxt").click(function(){
+            $("#message").text("こんばんはjqueryです。")
+        })
+    </script>
+    
+</body>
+</html>
